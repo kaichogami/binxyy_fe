@@ -1,0 +1,103 @@
+[
+    {
+      "view": "Working Capital",
+      "design": {
+        "1": {
+          "component": "Introduction text",
+          "title_1": "Dissecting working capital of {name}",
+          "subtitle_1": "Looking into components of working capital",
+          "text_1": "For industries which are heavy with working capital this view gives an overall idea where the {ticker} stands compared to different industries.",
+          "text_2": "However for industries like tech which are not heavy with working capital, this view provides limited insight."
+        },
+        "2": {
+          "component": "bar graph",
+          "title": "Total current assets by total assest",
+          "subtitle": "Test",
+          "text": "Test",
+          "x_axis": {
+            "label": "Year",
+            "data": "date"
+          },
+          "y_axis": {
+            "label_left": "Ratio in %",
+            "label_right": "yoy growth %",
+            "data_left": "totalcurrentassets_by_totalassets",
+            "data_right": "yoy_growth"
+          },
+          "bars": {
+                "1" :{
+                  "label": "{name}",
+                  "data": "totalcurrentassets_by_totalassets",
+                  "raw": true,
+                  "show_industry": {
+                    "raw": true
+                  }
+                }
+              },
+          "lines": {
+              "1" :{
+                "label": "Average",
+                "data": "totalcurrentassets_by_totalassets",
+                "delta": true,
+                "show_industry": {
+                  "delta": true
+                }
+            },
+          "raw": {
+              "totalcurrentassets": "float",
+              "totalassets": "float",
+              "totalcurrentassets_by_totalassets": "float"
+            },
+            "custom": {
+              "totalcurrentassets_by_totalassets": "float"
+            },
+            "aggregate": {
+              "industry": {
+                "delta": {
+                  "totalcurrentassets_by_totalassets": "float"
+                }
+              }
+            }
+           },
+           "x_axis_title": "Year",
+           "y_axis_title": "current assets by total assets",
+           "options":{
+            "show_yoy_growth": true
+           }
+        },
+        "5": {
+          "component": "table",
+          "title": "Stats about current assets",
+          "subtitle": "",
+          "text": "",
+          "data": {
+            "Current assests cagr": 0.05,
+            "current assets industry cagr": 0.05,
+            "total assets cagr": 0.05,
+            "total assets industry cagr": 0.05,
+            "accounts receivable cagr": 0.05,
+            "accounts receivable industry cagr": 0.05,
+            "inventory cagr": 0.05,
+            "inventory industry cagr": 0.05
+          }
+        }
+      }
+    },
+
+    {
+      "view": "global_view",
+      "top_50_percent_comparision_industry": false,
+      "show_countries_industry_comparision": {
+        "all": true,
+        "india": false,
+        "us": false,
+        "china": false,
+        "england": false,
+        "germany": false,
+        "japan": false,
+        "same_as_ticker": true
+      }
+    }
+
+  ]
+  
