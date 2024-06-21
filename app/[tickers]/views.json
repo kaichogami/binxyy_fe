@@ -1,6 +1,6 @@
 [
     {
-      "view": "Working Capital",
+      "view": "working_capital",
       "design": {
         "1": {
           "component": "Introduction text",

@@ -16,13 +16,13 @@
           "text": "Test",
           "x_axis": {
             "label": "Year",
-            "data": "date"
+            "data": "custom_metrics.date"
           },
           "y_axis": {
             "label_left": "Ratio in %",
             "label_right": "yoy growth %",
-            "data_left": "totalcurrentassets_by_totalassets",
-            "data_right": "delta"
+            "data_left": "custom_metrics.totalcurrentassets_by_totalassets",
+            "data_right": "delta_metrics.totalcurrentassets_by_totalassets"
           },
           "bars": {
                 "1" :{

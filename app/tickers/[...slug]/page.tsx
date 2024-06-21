@@ -30,7 +30,7 @@ async function fetchTickersFromAPI() {
 }
 
 async function fetchDataFromAPI(ticker: string, view: string) {
-  const apiUrl = `http://127.0.0.1:8000/api/binxyyweb/fetch_annual_financial_data?tickers=${ticker}&view=${view}`;
+  const apiUrl = `http://127.0.0.1:8000/api/binxyyweb/fetch_ticker_data_by_view?tickers=${ticker}&view=${view}`;
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
